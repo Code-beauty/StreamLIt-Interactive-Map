@@ -10,7 +10,7 @@ from geopy.extra.rate_limiter import RateLimiter
 street = st.sidebar.text_input("Street"," ")
 city = st.sidebar.text_input("City","SD")
 province = st.sidebar.text_input("Province","SD")
-country = st.sidebar.text_input("Country".,"United States")
+country = st.sidebar.text_input("Country","United States")
 
 geolocator = Nominatim(user_agent="GTA Lookup")
 geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
